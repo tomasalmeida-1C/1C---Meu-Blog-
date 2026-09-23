@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <title>VVV</title>
+        <style>
+        
+            header{
+                background-color: #AD0E0E;
+                color: #FFFFFF;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 16px; 
+                border: 5px solid #5a1313
+
+            }
+            main{
+                background-color: #FFFFFF;;
+                color: #AD0E0E;
+                 max-width: 800px;
+                 margin: 0 auto;
+                 padding: 16px;
+                }
+            article{
+                display: flex;   
+            }
+            img{
+                widht: 80px;
+                height:80px;
+            }
+            .artigo-autor {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body> 
+        <header>
+            <h1>Venere Vai Venus </h1>
+            <p>Como a banda foi formada e seu maior pico de sucesso!</p>
+        </header>
+        <main>
+            <article>
+                <img src="Gemini_Generated_Image_8wf90t8wf90t8wf9.png" alt="Representação ilustrativa do planeta ">
+                <div>
+                    <h2>Formação da banda</h2>
+                    <p class="artigo-autor">Por: Tomás Candido</p>
+                    <p>A Vênere Vai Vênus nasceu da sincronia musical de Gabriel Dourado e Tuzinho, que começaram criando as primeiras composições do projeto. Em seguida, a entrada de Thales no baixo e Lucas na bateria trouxe a pressão e a energia necessárias para o som decolar. Mais tarde, com a chegada de Giu nos teclados, o quinteto selou sua identidade repleta de sintetizadores e timbres marcantes. Essa junção gradual transformou o grupo em um dos destaques mais promissores do indie rock nacional.</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>🤙 <span>0</span></button>
+                </div>
+            </article>
+            <article>
+                  <img src="Gemini_Generated_Image_8wf90t8wf90t8wf9.png" alt="Representação ilustrativa do planeta ">
+                <div>
+                    <h2>Qual foi o seu ápice de audiência?</h2>
+                    <p class="artigo-autor">Por: Tomás Candido</p>
+                    <p>O maior pico de sucesso e projeção da banda Venere Vai Venus ocorreu entre 2025 e 2026, impulsionado pela viralização de suas músicas e por grandes marcos na carreira do quarteto paulistano! A banda venceu o Concurso de Bandas do Festival João Rock 2025 e lançou seu aclamado álbum de estreia, Divino. O grupo alcançou o Top 3 da playlist Viral 50 do Spotify com os sucessos “Circo” e “Anjos”, ultrapassando a marca de 1 milhão de ouvintes mensais nas plataformas digitais. A obra continuou em alta com a conquista de seu primeiro disco de platina pelo álbum Divino após bater 20 milhões de streams, além da estreia oficial da banda no Rock in Rio 2026.</p>
+                    <button>❤️ <span>0</span></button>
+                    <button>🤙 <span>0</span></button>
+                </div>
+            </article>
+            </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach( function (botao){
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else { 
+            texto.textContent --;
+            curtiu = false;
+             } }
+    })
+</script>
+ </html>
